@@ -2,6 +2,9 @@ import React from 'react';
 import Grid from 'material-ui/Grid';
 import Paper from 'material-ui/Paper';
 import { withStyles } from 'material-ui/styles';
+
+import BillingInfoForm from './BillingInfoForm';
+
 const styles = {
   billingInfo: {
     paddingLeft: '10px',
@@ -16,22 +19,7 @@ class PaymentGrid extends React.Component {
     const { classes } = this.props;
     return (
       <div>
-        <Grid container>
-          <Grid item xs={6}>
-            <div className={classes.billingInfo}>
-            <Paper>
-              {'Billing info'}
-            </Paper>
-            </div>
-          </Grid>
-          <Grid item xs={6}>
-            <div className={classes.creditCardForm}>
-              <Paper>
-                {'CC Form'}
-              </Paper>
-            </div>
-          </Grid>
-        </Grid>
+        <BillingInfoForm />
       </div>
     );
   }

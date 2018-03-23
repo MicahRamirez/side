@@ -5,14 +5,18 @@
   "dependencies": {
     "history": "^4.7.2",
     "material-ui": "^1.0.0-beta.38",
+    "material-ui-icons": "^1.0.0-beta.36",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-number-format": "^3.3.0",
     "react-redux": "^5.0.7",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "react-router-redux": "^4.0.8",
     "react-scripts": "1.1.1",
-    "redux": "^3.7.2"
+    "react-stripe-elements": "^1.6.0",
+    "redux": "^3.7.2",
+    "redux-form": "^7.3.0"
   },
   "scripts": {
     "start": "react-scripts start",

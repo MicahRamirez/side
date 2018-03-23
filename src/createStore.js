@@ -1,6 +1,7 @@
 import { createStore, combineReducers } from 'redux'
 import { routerReducer } from 'react-router-redux'
-import { devToolsEnhancer } from 'redux-devtools-extension';
+import { reducer as reduxFormReducer } from 'redux-form'
+import { devToolsEnhancer } from 'redux-devtools-extension'
 
 
 import reducer from './reducer';
@@ -10,6 +11,7 @@ const createReduxStore = ({ initParams }) => {
     combineReducers({
       routing: routerReducer,
       reducer: reducer,
+      form: reduxFormReducer,
     }),
     initParams,
     devToolsEnhancer(),
